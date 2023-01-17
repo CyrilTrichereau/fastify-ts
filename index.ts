@@ -1,7 +1,11 @@
 import fastify from "fastify";
 import { IHeaders, IQuerystring } from "./models/test.models";
 
-const server = fastify();
+// https://www.fastify.io/docs/latest/Guides/Getting-Started/
+
+const server = fastify({
+  logger: true,
+});
 
 server.get("/ping", async (request, reply) => {
   return "pong\n";
