@@ -1,7 +1,6 @@
 import autoLoad from "@fastify/autoload";
 import { join } from "path";
 import fastify from "fastify";
-import { IHeaders, IQuerystring } from "./models/test.models";
 
 export const server = fastify({
   logger: true,
