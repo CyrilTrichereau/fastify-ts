@@ -9,6 +9,9 @@ module.exports = async (fastify: {
   fastify.get("/", async function (request, reply) {
     await reply.send({ hello: "worlds" });
   });
+  fastify.get("/notfound", async function (request, reply) {
+    reply.notFound();
+  });
   fastify.get("/ping", async function (request, reply) {
     await reply.send({ hello: "pong" });
   });
