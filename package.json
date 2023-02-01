@@ -2,18 +2,21 @@
   "name": "fastify-ts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "tsc -w",
-    "dev": "nodemon dist/index.js",
-    "start": "node dist/index.js"
+    "dev": "nodemon dist/server.js",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@fastify/autoload": "^5.7.1",
+    "@fastify/compress": "^6.2.0",
+    "@fastify/env": "^4.2.0",
     "@fastify/helmet": "^10.1.0",
+    "@fastify/sensible": "^5.2.0",
     "fastify": "^4.12.0"
   },
   "devDependencies": {
